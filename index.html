@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="height:100%">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Illuminated : Teaser</title>
+<script type="text/javascript" src="teaser/swfobject.js"></script>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-600135-5");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<script language="javascript" type="text/javascript" src="meta/script.pngfix.js"></script>
+<script language="javascript" type="text/javascript" src="meta/script.rollover.js"></script>
+<script language="javascript" type="text/javascript" src="meta/script.chunks.js"></script>
+
+
+<script> // GENERAL SCRIPTS
+
+
+/* Set Global Variable */ /* Determine What Browser The Client Running */ var ns6 = (!document.all && document.getElementById); var ie4 = (document.all); var ns4 = (document.layers); var browser = new Object(); browser.version = parseFloat(navigator.appVersion); browser.isNetscape = false; browser.isIE = false; if (navigator.appName.indexOf("Netscape") != -1) browser.isNetscape = true; else if (navigator.appName.indexOf("Microsoft") != -1) browser.isIE = true; function PopPromoWin(aUrl, width, height ) { winName = "PopPromoWin"; if(width <= 0) { width = 400; } if(height <= 0) { height = 300; } newWin = window.open("about:blank", winName, "width=" + width + ",height=" + height +",scrollbars=0,resizable=no"); newWin.location.href = aUrl; } 
+
+
+	function switchClass(idd, newClass) {
+	
+		identity=document.getElementById(idd);
+	
+		if ( browser.isIE == false )
+			identity.setAttribute('class',newClass);
+		else
+			identity.className=newClass;
+		
+	}
+
+
+	function toggleDefaultTxt( fieldID, defaultTxt, classs ){
+	
+	theFieldID = document.getElementById(fieldID).value;
+	
+		if ( theFieldID == defaultTxt ){ 
+			document.getElementById(fieldID).value = ''; 
+			switchClass ( fieldID , classs );
+			
+			}
+			
+		else if ( theFieldID == '' ) {
+			document.getElementById(fieldID).value = defaultTxt;
+			switchClass ( fieldID , classs );
+			}
+		
+	}
+
+</script>
+
+
+<script> // POSITIONING SCRIPTS
+
+// Subroutine to get the size of the window
+function getSize() {
+ var myWidth = 0, myHeight = 0;
+ if(typeof(window.innerWidth) == 'number') {
+  //Non-IE
+  myWidth = window.innerWidth;
+  myHeight = window.innerHeight;
+ }else if(document.documentElement &&
+  (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+  //IE 6+ in 'standards compliant mode'
+  myWidth = document.documentElement.clientWidth;
+  myHeight = document.documentElement.clientHeight;
+ } else if(document.body && (document.body.clientWidth || document.body.clientHeight)) {
+  //IE 4 compatible
+  myWidth = document.body.clientWidth;
+  myHeight = document.body.clientHeight;
+ }
+ return [myWidth, myHeight];
+}
+
+	var bodySize = getSize();
+
+	function positionWhatIz(){
+		bodySize = getSize();
+		
+		XX = bodySize[0] -120 ;
+		YY = -30 ; //bodySize[1]/2
+		positionXY ('whatizdiv', XX, YY );
+		
+		}
+	
+	function positionXY (idd, XX, YY){
+		//document.getElementById(idd).style.height = (document.body.clientHeight - diffHeight ) + 'px' ;
+		document.getElementById(idd).style.left = XX +'px' ;
+		document.getElementById(idd).style.top = YY +'px' ;
+	}
+	
+	//window.onresize
+	
+//	positionXY('whatizdiv','500','200')
+	
+	
+	
+	
+</script>
+
+
+
+<style>
+ .symb_off {	opacity:.10;filter: alpha(opacity=10); -moz-opacity: 0.1 }
+ .symb_on  {	opacity:.75;filter: alpha(opacity=75); -moz-opacity: 0.75 }
+</style>
+	
+
+</head>
+
+<body style="background:#000000; margin:0px; padding:0px; height:100%; overflow:hidden" onload="positionWhatIz();MM_preloadImages('imgz/symbolikons/pod-green.png','imgz/symbolikons/phong-green.png','imgz/symbolikons/gnn-green.png','imgz/symbolikons/bitzip-green.png','imgz/symbolikons/conceptart-green.png','imgz/features/whatiz_on.gif')" onresize="positionWhatIz()">
+
+
+<div style="overflow:hidden; position:absolute; top:-1000px; left:-1000px"> <img src="imgz/links/FB-LINK.jpg" width="256" height="256" border="0" /> </div>
+
+<div id="whatizdiv" style="position:absolute;overflow:hidden">
+<!--a href="index02.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('whatiz','','imgz/features/whatiz_on.gif',1)"><img src="imgz/features/whatiz_off.gif" alt="What is Illuminated?" name="whatiz" width="146" height="248" border="0" id="whatiz" /></a-->
+</div>
+
+<script type="text/javascript">
+positionWhatIz();
+</script>
+
+
+<table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%">
+
+	<tr>
+		<td height="15%">&nbsp;</td>
+	</tr>
+	
+	<tr>
+		<td height=600 style="height:600px; background:url(teaser/_imgs/teaser-BG01.jpg) center no-repeat  " align=center valign="top">
+		
+
+			<br><br><br>
+				<div id="player1" style=" overflow:hidden; border:1px #111111 solid; width:480px" align="center"><a href="http://www.macromedia.com/go/getflashplayer">Get the Flash Player</a> to see this player.</div>
+				
+				
+				<script type="text/javascript">
+					var s1 = new SWFObject("teaser/flvplayer.swf","single","480","290","7");
+					s1.addParam("allowfullscreen","true");
+					s1.addVariable("file","http://illuminated.com/video/_flv/illu_EP01_trailer_700-2010.flv");
+					s1.addVariable("image","teaser/_imgs/preview.jpg");
+					s1.addVariable("width","480");
+					s1.addVariable("height","290");
+					s1.addVariable("backcolor","0x000000");
+					s1.addVariable("frontcolor","0x666666");
+					s1.addVariable("lightcolor","0xcc6600");
+					s1.addVariable("overstretch","false");
+					s1.addVariable("callback","analytics");
+					s1.write("player1");
+				</script>
+
+
+
+		<div align="center" style="width:780px; position:relative; top:145px">
+		
+		
+		
+			<div class="feature_off" style="position:absolute; left: 260px; top: 0px;"  onMouseOver="switchClass('usb_feature', 'feature_on')" onMouseOut="switchClass('usb_feature', 'feature_off')" id="usb_feature"><a href="store/crystal_key"><img src="imgz/features/USB_key-1GB-dreamport.png" width="240" height="140" border="0" /></a></div>
+			
+			<div class="feature_off" style="background:url(imgz/features/mailing_list02.jpg) no-repeat; float:left; display:none;" align="left"
+			 onMouseOver="switchClass('mail_feature', 'feature_on')" onMouseOut="switchClass('mail_feature', 'feature_off')" id="mail_feature">
+				
+				<form name="mailing_list" method="post" action="http://illuminated.com/substratum/newsletter.php" style="margin:0; padding:0px">
+				<input type="hidden" name="mode" value="newsletter_signup">
+				
+				<div style="position:relative; top:78px; left:18px;">
+				
+				<input type="text" name="email" value="your email" class="emailbox_off"
+				onfocus="toggleDefaultTxt('emailbox01', 'your email', 'emailbox_on')"
+				onblur="toggleDefaultTxt('emailbox01', 'your email', 'emailbox_off')"
+				id="emailbox01" style="float:left" />
+				
+				<!---  --->
+				
+				<a href="javascript:document.mailing_list.submit();" ><img type="image" value="submit" src="imgz/buttons/submit01-orange.png" width="28" height="28" border="0" style="float:left; position:relative; left:4px" /></a>
+	
+				</div>
+				
+				<input type="submit" value="submit" style="display:none; visibility:hidden" />
+	
+
+				</form>
+				
+			</div>
+			
+			
+            <div style="overflow:hidden; width:238px; height:58px;">
+            
+                <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FIlluminated%2F124853834261801&amp;width=244&amp;colorscheme=dark&amp;show_faces=false&amp;stream=false&amp;header=false&amp;height=60" scrolling="no" frameborder="0" style="display:none;border:none; border:0; overflow:hidden; width:244px; height:60px;  position:relative; top:-1px; left:-4px" allowTransparency="true"></iframe>
+                
+            </div>
+             
+             
+             <a href="http://dreamcatcher.net/?s=illuminated" style="position: absolute; left: 270px; top: 150px;"><img src="imgz/links/DC-LINK.jpg" width="240" height="100" border="0" /></a>
+             
+    
+		
+		</div>
+
+
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="center" valign="top" align="center">
+		
+		
+
+
+		<style>
+		
+		DIV.feature, DIV.feature_off, DIV.feature_on {
+				padding:0px; width:240px; height:140px; margin:10px
+			}
+			
+		.feature_off {	opacity:.33;filter: alpha(opacity=33); -moz-opacity: 0.33 }
+ 		.feature_on  {	opacity:1;filter: alpha(opacity=100); -moz-opacity: 1 }
+  
+		input.emailbox_off, input.emailbox_on {
+			
+				height:18px; width:158px; 
+				font-size:17px; font-family:Arial, Helvetica, sans-serif;
+				background:#292929; border:1px solid #793e22; color:#333333;
+				padding:4px
+
+			}
+		
+		input.emailbox_on {
+		
+			border: 1px solid #f76e3e;
+			color:silver
+		}
+		
+		input.emailbox_off {
+	
+			color:#333333
+		}
+
+		
+		</style>
+		
+		
+		<br>
+	
+			
+
+<!--
+	
+<div id="donate_love" style="padding:20px 0 0 0">
+
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="paypal">
+	<input type="hidden" name="cmd" value="_xclick">
+	<input type="hidden" name="business" value="av@phong.com">
+	<input type="hidden" name="item_name" value="I love Illuminated.">
+	<input type="hidden" name="page_style" value="Illuminated_Donate_001">
+	<input type="hidden" name="no_shipping" value="0">
+	<input type="hidden" name="return" value="http://illuminated.com/store/landing/thankyou.php">
+	<input type="hidden" name="cancel_return" value="http://illuminated.com">
+	<input type="hidden" name="no_note" value="1">
+	<input type="hidden" name="currency_code" value="CAD">
+	<input type="hidden" name="tax" value="0">
+	<input type="hidden" name="lc" value="CA">
+	<input type="hidden" name="bn" value="PP-DonationsBF">
+	<input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but21.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!" class="feature_off" onMouseOver="switchClass('donate_feature', 'feature_on')" onMouseOut="switchClass('donate_feature', 'feature_off')" id="donate_feature" style="display:none">
+	<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	
+
+<div>
+
+<a href="javascript:document.paypal.submit();" 
+				
+				
+				onMouseOut="seqIMG('donate','imgz/features/donate_mini_3.gif','imgz/features/donate_mini_2.gif','imgz/features/donate_mini_1.gif','imgz/features/donate_mini_0.gif');switchClass('donate', 'feature_off')"
+				onMouseOver="seqIMG('donate','imgz/features/donate_mini_1.gif','imgz/features/donate_mini_2.gif','imgz/features/donate_mini_3.gif','imgz/features/donate_mini_4.gif');switchClass('donate','feature_on')"
+
+				
+				
+				><img src="imgz/features/donate_mini_0.gif" name="donate" id="donate" width="360" height="70" border="0" class="feature_off"></a>
+
+
+</form>
+		</div></div>
+		-->
+		<br><br>
+		</td>
+	</tr>
+
+
+</table>
+
+
+
+</body>
+</html>
